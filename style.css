@@ -1,0 +1,214 @@
+/* JakeWiki legal pages — 앱과 동일한 paper/ink/accent 스케치 톤 */
+:root {
+  --ink: #1b1b1b;
+  --ink-soft: #4a4a4a;
+  --paper: #fbfaf6;
+  --paper2: #f4f1e8;
+  --paper-bg: #f0eee9;
+  --accent: #c64530;
+  --accent-soft: #e8a895;
+  --highlight: #fde68a;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--paper-bg);
+  color: var(--ink);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans KR",
+    Roboto, "Helvetica Neue", Arial, sans-serif;
+  line-height: 1.65;
+  font-size: 16px;
+}
+
+.wrap {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 32px 20px 80px;
+}
+
+header.site {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 8px;
+}
+
+.logo {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  border: 2px solid var(--ink);
+  border-radius: 10px;
+  background: var(--paper);
+  font-weight: 800;
+  font-size: 20px;
+  transform: rotate(-3deg);
+}
+
+header.site h1 {
+  margin: 0;
+  font-size: 22px;
+  letter-spacing: -0.01em;
+}
+
+.tagline {
+  color: var(--ink-soft);
+  font-size: 14px;
+  margin: 0 0 28px;
+}
+
+.card {
+  background: var(--paper);
+  border: 1.5px solid var(--ink);
+  border-radius: 10px;
+  padding: 18px 20px;
+  margin: 14px 0;
+}
+
+a.doc-link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  text-decoration: none;
+  color: inherit;
+  background: var(--paper);
+  border: 1.5px solid var(--ink);
+  border-radius: 10px;
+  padding: 16px 18px;
+  margin: 12px 0;
+  transition: transform 0.08s ease, background 0.12s ease;
+}
+
+a.doc-link:hover {
+  background: var(--paper2);
+  transform: translateY(-1px);
+}
+
+a.doc-link .doc-title {
+  font-weight: 700;
+  color: var(--accent);
+  font-size: 16px;
+}
+
+a.doc-link .doc-sub {
+  color: var(--ink-soft);
+  font-size: 13px;
+}
+
+a.doc-link .arrow {
+  color: var(--ink-soft);
+  font-size: 18px;
+}
+
+main h1.page-title {
+  font-size: 26px;
+  margin: 0 0 4px;
+  letter-spacing: -0.01em;
+}
+
+.effective {
+  color: var(--ink-soft);
+  font-size: 13px;
+  margin: 0 0 24px;
+}
+
+h2 {
+  font-size: 18px;
+  margin: 28px 0 8px;
+  padding-bottom: 6px;
+  border-bottom: 1.5px dashed var(--accent-soft);
+}
+
+h3 {
+  font-size: 15px;
+  margin: 18px 0 6px;
+}
+
+p,
+li {
+  color: var(--ink);
+}
+
+.muted {
+  color: var(--ink-soft);
+}
+
+mark {
+  background: var(--highlight);
+  padding: 0 3px;
+  border-radius: 3px;
+}
+
+a {
+  color: var(--accent);
+}
+
+ul {
+  padding-left: 22px;
+}
+
+li {
+  margin: 4px 0;
+}
+
+.back {
+  display: inline-block;
+  margin-bottom: 20px;
+  text-decoration: none;
+  color: var(--ink-soft);
+  font-size: 14px;
+}
+
+.back:hover {
+  color: var(--accent);
+}
+
+pre.license {
+  background: var(--paper2);
+  border: 1.5px solid var(--ink);
+  border-radius: 8px;
+  padding: 16px;
+  overflow-x: auto;
+  font-family: "SFMono-Regular", "Cascadia Mono", Consolas, monospace;
+  font-size: 12px;
+  line-height: 1.5;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+.lib {
+  margin: 10px 0;
+}
+
+.lib .lib-name {
+  font-weight: 700;
+  color: var(--accent);
+}
+
+.lib .lib-meta {
+  color: var(--ink-soft);
+  font-size: 13px;
+}
+
+footer.site {
+  margin-top: 48px;
+  padding-top: 18px;
+  border-top: 1.5px solid var(--accent-soft);
+  color: var(--ink-soft);
+  font-size: 13px;
+}
+
+footer.site a {
+  color: var(--ink-soft);
+}
